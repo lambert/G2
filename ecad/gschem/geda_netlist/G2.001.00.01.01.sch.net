@@ -1,0 +1,112 @@
+START header
+
+gEDA's netlist format
+Created specifically for testing of gnetlist
+
+END header
+
+START components
+
+U1 device=AT89C51_PLCC
+R3 device=RESISTOR
+R2 device=RESISTOR
+R5 device=RESISTOR
+R6 device=RESISTOR
+R7 device=RESISTOR
+C10 device=POLARIZED_CAPACITOR
+S1 device=SWITCH_PUSHBUTTON_NO
+S2 device=SWITCH_DIP4
+J3 device=CONNECTOR
+J4 device=CONNECTOR
+C9 device=CAPACITOR
+C8 device=CAPACITOR
+X1 device=CRYSTAL
+C4 device=POLARIZED_CAPACITOR
+C3 device=POLARIZED_CAPACITOR
+C2 device=POLARIZED_CAPACITOR
+C1 device=POLARIZED_CAPACITOR
+J2 device=DB9
+D1 device=LED
+U3 device=MAX232
+R1 device=RESISTOR
+C11 device=CAPACITOR
+C6 device=POLARIZED_CAPACITOR
+C7 device=CAPACITOR
+J1 device=BARREL-JACK-NO
+
+END components
+
+START renamed-nets
+
+
+END renamed-nets
+
+START nets
+
+unnamed_net29 : U1 34 
+unnamed_net28 : U1 23 
+unnamed_net27 : U1 12 
+unnamed_net26 : U1 1 
+unnamed_net25 : U1 33 
+unnamed_net24 : U1 35, R5 1 
+unnamed_net23 : U1 32, R6 1 
+unnamed_net22 : U1 10, C10 2, R7 2, S1 2 
+unnamed_net21 : R6 2, S2 4 
+unnamed_net20 : R5 2, S2 3 
+P3_7 : U1 19, J3 16 
+P3_6 : U1 18, J3 15 
+P3_5 : U1 17, J3 14 
+P3_4 : U1 16, J3 13 
+P3_3 : U1 15, J3 12 
+P3_2 : U1 14, J3 11 
+P1_7 : U1 9, R2 1, J3 8 
+P1_6 : U1 8, R3 1, J3 7 
+P1_5 : U1 7, J3 6 
+P1_4 : U1 6, J3 5 
+P1_3 : U1 5, J3 4 
+P1_2 : U1 4, J3 3 
+P1_1 : U1 3, J3 2 
+P1_0 : U1 2, J3 1 
+P2_7 : U1 31, S2 1, J4 16 
+P2_6 : U1 30, S2 2, J4 15 
+P2_5 : U1 29, J4 14 
+P2_4 : U1 28, J4 13 
+P2_3 : U1 27, J4 12 
+P2_2 : U1 26, J4 11 
+P2_1 : U1 25, J4 10 
+P2_0 : U1 24, J4 9 
+P0_7 : U1 36, J4 8 
+P0_6 : U1 37, J4 7 
+P0_5 : U1 38, J4 6 
+P0_4 : U1 39, J4 5 
+P0_3 : U1 40, J4 4 
+P0_2 : U1 41, J4 3 
+P0_1 : U1 42, J4 2 
+P0_0 : U1 43, J4 1 
+unnamed_net19 : U1 20, C9 1, X1 2 
+unnamed_net18 : U1 21, C8 1, X1 1 
+unnamed_net17 : J2 1 
+unnamed_net16 : J2 6 
+unnamed_net15 : J2 7 
+unnamed_net14 : J2 8 
+unnamed_net13 : J2 4 
+unnamed_net12 : J2 9 
+Vcc : U1 44, U3 16 
+unnamed_net11 : C1 1, U3 1 
+unnamed_net10 : J2 2, U3 14 
+unnamed_net9 : J2 3, U3 13 
+P3_0 : U1 11, J3 9, U3 12 
+P3_1 : U1 13, J3 10, U3 11 
+unnamed_net8 : U3 9 
+unnamed_net7 : U3 7 
+unnamed_net6 : C3 1, U3 6 
+unnamed_net5 : C2 2, U3 5 
+unnamed_net4 : C2 1, U3 4 
+unnamed_net3 : C1 2, U3 3 
+unnamed_net2 : C4 2, U3 2 
+unnamed_net1 : D1 2, R1 2 
+GND : U1 22, R7 1, S2 5, J3 20, J3 19, J4 20, J4 19, C9 2, C8 2, C3 2, J2 5, U3 15, J1 2, C11 2, C7 2, C6 2, D1 1, J1 3 
++5V : R3 2, R2 2, C10 1, S1 1, S2 8, S2 7, S2 6, J3 18, J3 17, J4 18, J4 17, C4 1, U3 10, U3 8, C6 1, C7 1, C11 1, R1 1, J1 1 
+
+END nets
+
